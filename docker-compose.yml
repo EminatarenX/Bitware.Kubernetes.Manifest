@@ -1,0 +1,6 @@
+services:
+
+  apexpress:
+    image: apexpress
+    container_name: apexpress
+    build: .

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: apexpress
+  name: apexpress
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apexpress
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: apexpress
+    spec:
+      containers:
+      - image: apexpress:latest
+        name: apexpress
+        imagePullPolicy: IfNotPresent
+        resources: {}
+status: {}
